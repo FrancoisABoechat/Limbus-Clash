@@ -175,18 +175,3 @@ class ClashNew:
         else:
             text = "Dominating"
         return text
-
-clasher_1 = {
-    "base_power":18,
-    "coin_power":-7,
-    "coin_amount":3,
-    "sanity":0,
-    "level":48
-}
-clasher_2 = {
-    "base_power":10,
-    "coin_power":-4,
-    "coin_amount":1,
-    "sanity":0,
-    "level":42
-}

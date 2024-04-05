@@ -28,18 +28,22 @@ def main():
     labels = ["Base Power", "Coin Power", "Coin amount", "Sanity", "Level"]
     # Create entry boxes for inputs
     entry_boxes = []
+    label = tk.Label(root, text="Sinner")
+    label.grid(row=0, column=1, padx=5, pady=5)
+    label = tk.Label(root, text="Enemy")
+    label.grid(row=0, column=3, padx=5, pady=5)
     for i in range(10):
         if int(i/5) < 1:
             label = tk.Label(root, text=labels[i])
-            label.grid(row=i, column=0, padx=5, pady=5)
+            label.grid(row=i+1, column=0, padx=5, pady=5)
             entry = tk.Entry(root)
-            entry.grid(row=i, column=1, padx=5, pady=5)
+            entry.grid(row=i+1, column=1, padx=5, pady=5)
             entry_boxes.append(entry)
         else:
             label = tk.Label(root, text=labels[i-5])
-            label.grid(row=i-5, column=2, padx=5, pady=5)
+            label.grid(row=i-4, column=2, padx=5, pady=5)
             entry = tk.Entry(root)
-            entry.grid(row=i-5, column=3, padx=5, pady=5)
+            entry.grid(row=i-4, column=3, padx=5, pady=5)
             entry_boxes.append(entry)
 
     # Create button to process inputs
